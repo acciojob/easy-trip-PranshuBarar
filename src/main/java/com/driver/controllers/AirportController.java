@@ -193,7 +193,7 @@ public class AirportController {
             }
         }
         int totalRevenue = 0;
-        for(int i=1; i<=count; i++){
+        for(int i=0; i<=count; i++){
             totalRevenue += 3000 + (i * 50);
         }
 
