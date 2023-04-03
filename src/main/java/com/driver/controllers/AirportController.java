@@ -46,7 +46,7 @@ public class AirportController {
             }
             else if(entry.getValue().getNoOfTerminals()==noOfAirport){
                 int result = name.compareTo(entry.getKey());
-                if (result < 0) {
+                if (result > 0) {
                     name = entry.getKey();
                 }
             }
