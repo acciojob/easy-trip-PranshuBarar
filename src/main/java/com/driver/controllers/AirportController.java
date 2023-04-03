@@ -111,7 +111,7 @@ public class AirportController {
     public String bookATicket(@RequestParam("flightId")Integer flightId,@RequestParam("passengerId")Integer passengerId){
         int count = 0;
         for(Map.Entry<Integer,Integer> entry : passengerFlightMap.entrySet()){
-            if(entry.getKey().equals(passengerId)){
+            if(entry.getKey().equals(passengerId) && entry.getValue().equals(flightId)){
                 return "FAILURE";
             }
             else if(entry.getValue().equals(flightId)){
